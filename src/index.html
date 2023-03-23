@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+  
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body class="bg-[#FFFFFF;]">
@@ -41,9 +42,35 @@
 
           <div class="second-container">
             <h1 class="font-quicksand font-bold text-[#2E2B26] text-2xl mt-6 text-center">All Tracks</h1>
+            <div class=" music player flex justify-between mt-4 place-items-center space-x-2 ">
+              <img class="h-8" src="../src/styles/assets/cover.png" alt="">
+              <h1 class="text-sm">Call out </h1>
+
+              <audio id="audio-player" src="../src/styles/assets/The-Weeknd-Call-Out-My-Name-Live-(HiphopKit.com).mp3"></audio>
+
+                 <button id="play-pause-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4  rounded-full ">
+
+                  <img id="icon w-2 " src="../src/styles/assets/Vector.png" alt="">
+
+                 </button>
+
+              <h5 class=" timer font-quicksand font-semibold text-black text-sm ">04:02</h5>
+
+              <img class="h-3" src="../src/styles/assets/lock.png"  alt="">
+
+              <button class=" border-[1px] border-black w-16 font-quicksand rounded-full text-sm">lyrics</button>
             
+             
+            
+            </div>
+             
           </div>
+
+
+          
+          
       </section>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>
